@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About - HTTP Server</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1 { color: #333; }
+        ul { line-height: 1.6; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .feature { background: #f8f9fa; padding: 15px; margin: 10px 0; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About This Multi-threaded HTTP Server</h1>
+        
+        <p>This is a multi-threaded HTTP server implemented in Python using low-level socket programming. It demonstrates advanced concepts in network programming, concurrent programming, and web server architecture.</p>
+        
+        <h2>Key Features</h2>
+        
+        <div class="feature">
+            <h3>🧵 Thread Pool Management</h3>
+            <p>Uses ThreadPoolExecutor with configurable pool size (default: 10 threads). Efficiently handles multiple concurrent connections without overwhelming system resources.</p>
+        </div>
+        
+        <div class="feature">
+            <h3>🔄 Keep-Alive Connections</h3>
+            <p>Supports HTTP/1.1 persistent connections with 30-second timeout and maximum 100 requests per connection. Reduces connection overhead for multiple requests.</p>
+        </div>
+        
+        <div class="feature">
+            <h3>📁 Binary File Transfer</h3>
+            <p>Properly handles binary file downloads (PNG, JPEG, TXT) with correct Content-Type and Content-Disposition headers. Files are read in binary mode to preserve data integrity.</p>
+        </div>
+        
+        <div class="feature">
+            <h3>📝 JSON POST Processing</h3>
+            <p>Accepts and validates JSON data via POST requests. Creates unique timestamped files in the uploads directory with proper error handling.</p>
+        </div>
+        
+        <div class="feature">
+            <h3>Sec

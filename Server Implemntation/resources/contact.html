@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - HTTP Server</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1 { color: #333; }
+        ul { line-height: 1.6; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .test-section { background: #f8f9fa; padding: 20px; margin: 20px 0; border-radius: 5px; }
+        code { background: #e9ecef; padding: 2px 5px; border-radius: 3px; }
+        pre { background: #e9ecef; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact & Testing Information</h1>
+        
+        <p>This page provides testing instructions and examples for the Multi-threaded HTTP Server.</p>
+        
+        <div class="test-section">
+            <h2>🌐 Basic GET Requests</h2>
+            <p>Test these URLs in your browser:</p>
+            <ul>
+                <li><strong>Home page:</strong> <a href="/">http://localhost:8080/</a></li>
+                <li><strong>About page:</strong> <a href="/about.html">http://localhost:8080/about.html</a></li>
+                <li><strong>This page:</strong> <a href="/contact.html">http://localhost:8080/contact.html</a></li>
+                <li><strong>404 test:</strong> <a href="/nonexistent.html">http://localhost:8080/nonexistent.html</a></li>
+            </ul>
+        </div>
+        
+        <div class="test-section">
+            <h2>📁 Binary File Downloads</h2>
+            <p>These links will trigger file downloads:</p>
+            <ul>
+                <li><a href="/sample.txt">Download sample.txt</a> (Text file as binary)</li>
+                <li><a href="/logo.png">Download logo.png</a> (PNG image)</li>
+                <li><a href="/photo.jpg">Download photo.jpg</a> (JPEG image)</li>
+            </ul>
+            <p><em>Note: Files will be downloaded with <code>Content-Disposition: attachment</code> header.</em></p>

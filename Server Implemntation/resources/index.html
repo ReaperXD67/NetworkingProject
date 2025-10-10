@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi-threaded HTTP Server</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1 { color: #333; }
+        ul { line-height: 1.6; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .container { max-width: 800px; margin: 0 auto; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Multi-threaded HTTP Server</h1>
+        <p>This server supports:</p>
+        <ul>
+            <li>HTML file serving with proper Content-Type headers</li>
+            <li>Binary file downloads (images, text files)</li>
+            <li>JSON POST requests with file storage</li>
+            <li>Persistent connections (Keep-Alive)</li>
+            <li>Multi-threaded request handling</li>
+            <li>Security features (path traversal protection, host validation)</li>
+        </ul>
+        
+        <h2>Navigation</h2>
+        <p>
+            <a href="/about.html">About</a> | 
+            <a href="/contact.html">Contact</a> |
+            <a href="/sample.txt">Download Sample Text</a>
+        </p>
+
+        <h2>Test Downloads</h2>
+        <p>These files will be downloaded as binary attachments:</p>
+        <ul>
+            <li><a href="/logo.png">Download Logo (PNG)</a></li>
+            <li><a href="/photo.jpg">Download Photo (JPEG)</a></li>
+            <li><a href="/sample.txt">Download Text File</a></li>
+        </ul>
+        
+        <h2>Server Information</h2>
+        <p>This page is served by a custom HTTP server implemented in Python using:</p>
+        <ul>
+            <li>Raw socket programming</li>
+            <li>ThreadPoolExecutor for concurrency</li>
+            <li>HTTP/1.1 protocol implementation</li>
+            <li>Proper request/response parsing</li>
+        </ul>
+    </div>
+</body>
+</html>

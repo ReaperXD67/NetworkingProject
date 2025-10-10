@@ -1,0 +1,39 @@
+This is a sample text file for testing binary downloads.
+
+Multi-threaded HTTP Server - Sample Text File
+===============================================
+
+The server will serve this file with:
+- Content-Type: application/octet-stream
+- Content-Disposition: attachment; filename="sample.txt"
+
+This causes browsers to download the file instead of displaying it inline.
+
+Features being tested:
+Binary file transfer
+Proper Content-Length headers  
+File download functionality
+Multi-threaded file serving
+Keep-alive connection handling
+Thread pool management
+
+Technical details:
+- File is read in binary mode ('rb')
+- Content-Length is calculated from actual file size
+- HTTP headers include proper RFC 7231 formatted date
+- Connection can be persistent or closed based on client request
+- Thread safety is maintained during concurrent file access
+
+Server capabilities:
+- Handles multiple concurrent downloads
+- Prevents directory traversal attacks
+- Validates Host headers for security
+- Supports various file types (HTML, TXT, PNG, JPEG)
+- Processes JSON POST requests
+- Comprehensive logging with timestamps
+- Proper error handling and HTTP status codes
+
+This file serves as a test case for binary file transfer functionality
+in the multi-threaded HTTP server implementation.
+
+End of sample file.
