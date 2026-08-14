@@ -1,4 +1,8 @@
-# HTTP Server from Sockets
+<div align="center">
+
+![HTTP Server from Sockets — animated project overview](./docs/assets/readme/networkingproject-hero.svg)
+
+</div>
 
 [![Python](https://img.shields.io/badge/Python-standard_library-3776ab?logo=python&logoColor=white)](./Server.py)
 [![Protocol](https://img.shields.io/badge/protocol-HTTP%2F1.1-4d8dff)](./Server.py)
